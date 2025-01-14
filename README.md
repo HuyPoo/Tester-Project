@@ -1,2 +1,1 @@
-# Project_Template
-Project mẫu Document Readme 
+docs/SRS.md

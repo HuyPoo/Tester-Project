@@ -1,0 +1,28 @@
+﻿# Ignore Node.js modules
+node_modules/
+
+# Ignore Bun cache
+.bun/
+
+# Ignore build output
+dist/
+
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore version control files
+.git/
+.gitignore
+
+# Docker-related files
+Dockerfile
+
+.idea/
+.git
+.vscode/
