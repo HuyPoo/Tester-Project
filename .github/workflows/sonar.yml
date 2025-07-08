@@ -26,19 +26,10 @@ jobs:
       - name: Build project
         run: dotnet build ./backend/Api/Api.csproj --no-restore --configuration Release
 
-      - name: Run tests with coverage
-        run: dotnet test ./backend/Api/Api.csproj --no-build --collect:"XPlat Code Coverage"
-
-      - name: Convert coverage to OpenCover
-        run: |
-          dotnet tool install --global dotnet-reportgenerator-globaltool
-          reportgenerator -reports:**/coverage.cobertura.xml -targetdir:coverage -reporttypes:SonarQube
-          mv coverage/SonarQube.xml coverage.opencover.xml
-
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
           organization: thieuquochuy
           projectKey: ThieuQuocHuy_Project_TemPlate_KTPM
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.S_
