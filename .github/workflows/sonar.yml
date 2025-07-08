@@ -32,4 +32,4 @@ jobs:
           organization: thieuquochuy
           projectKey: ThieuQuocHuy_Project_TemPlate_KTPM
         env:
-          SONAR_TOKEN: ${{ secrets.S_
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
