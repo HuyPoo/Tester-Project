@@ -20,14 +20,14 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Install dependencies
-        run: dotnet restore
+      - name: Restore dependencies
+        run: dotnet restore ./backend/Api/Api.csproj
 
       - name: Build project
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build ./backend/Api/Api.csproj --no-restore --configuration Release
 
       - name: Run tests with coverage
-        run: dotnet test --no-build --collect:"XPlat Code Coverage"
+        run: dotnet test ./backend/Api/Api.csproj --no-build --collect:"XPlat Code Coverage"
 
       - name: Convert coverage to OpenCover
         run: |

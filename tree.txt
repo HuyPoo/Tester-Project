@@ -1,0 +1,287 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 1841-3B40
+D:.
+¦   .gitignore
+¦   docker-compose.yml
+¦   README.md
+¦   sonar-project.properties
+¦   tree.txt
+¦   
++---.github
+¦   +---workflows
+¦           sonar.yml
+¦           
++---backend
+¦   ¦   .dockerignore
+¦   ¦   .gitignore
+¦   ¦   Backend.sln
+¦   ¦   global.json
+¦   ¦   
+¦   +---Api
+¦   ¦   ¦   Api.csproj
+¦   ¦   ¦   appsettings.Development.json
+¦   ¦   ¦   appsettings.json
+¦   ¦   ¦   Policies.cs
+¦   ¦   ¦   Program.cs
+¦   ¦   ¦   SeedData.cs
+¦   ¦   ¦   
+¦   ¦   +---Controllers
+¦   ¦   ¦       AppointmentController.cs
+¦   ¦   ¦       AuthController.cs
+¦   ¦   ¦       CustomersController.cs
+¦   ¦   ¦       SalonController.cs
+¦   ¦   ¦       ServicesController.cs
+¦   ¦   ¦       StatsController.cs
+¦   ¦   ¦       StylistsController.cs
+¦   ¦   ¦       
+¦   ¦   +---Filters
+¦   ¦   ¦       ApiExceptionFilter.cs
+¦   ¦   ¦       
+¦   ¦   +---Properties
+¦   ¦           launchSettings.json
+¦   ¦           
+¦   +---Business
+¦   ¦   ¦   Business.csproj
+¦   ¦   ¦   BusinessServices.cs
+¦   ¦   ¦   
+¦   ¦   +---DTOs
+¦   ¦   ¦       AppointmentDto.cs
+¦   ¦   ¦       AuthDto.cs
+¦   ¦   ¦       CustomerDto.cs
+¦   ¦   ¦       SalonDto.cs
+¦   ¦   ¦       ServiceDto.cs
+¦   ¦   ¦       StatsDto.cs
+¦   ¦   ¦       StylistDto.cs
+¦   ¦   ¦       
+¦   ¦   +---Exceptions
+¦   ¦   ¦       HttpResponseException.cs
+¦   ¦   ¦       
+¦   ¦   +---Interfaces
+¦   ¦   ¦       IAppointmentService.cs
+¦   ¦   ¦       IAuthService.cs
+¦   ¦   ¦       ICustomerService.cs
+¦   ¦   ¦       IEmailService.cs
+¦   ¦   ¦       ISalonService.cs
+¦   ¦   ¦       IServiceService.cs
+¦   ¦   ¦       IStatsService.cs
+¦   ¦   ¦       IStylistService.cs
+¦   ¦   ¦       
+¦   ¦   +---Mappings
+¦   ¦   ¦       MappingProfile.cs
+¦   ¦   ¦       
+¦   ¦   +---Services
+¦   ¦   ¦       AppointmentService.cs
+¦   ¦   ¦       AuthService.cs
+¦   ¦   ¦       CustomerService.cs
+¦   ¦   ¦       MailService.cs
+¦   ¦   ¦       SalonService.cs
+¦   ¦   ¦       ServiceService.cs
+¦   ¦   ¦       StatsService.cs
+¦   ¦   ¦       StylistService.cs
+¦   ¦   ¦       
+¦   ¦   +---Settings
+¦   ¦           EmailSettings.cs
+¦   ¦           JwtSettings.cs
+¦   ¦           
+¦   +---Persistence
+¦       ¦   AppDbContext.cs
+¦       ¦   Persistence.csproj
+¦       ¦   PersistenceRepositories.cs
+¦       ¦   
+¦       +---Entities
+¦       ¦       Appointment.cs
+¦       ¦       Salon.cs
+¦       ¦       Service.cs
+¦       ¦       User.cs
+¦       ¦       
+¦       +---Helpers
+¦       ¦       AppDbContextFactory.cs
+¦       ¦       
+¦       +---Interfaces
+¦       ¦       IAppointmentRepository.cs
+¦       ¦       ICustomerRepository.cs
+¦       ¦       IRepository.cs
+¦       ¦       ISalonRepository.cs
+¦       ¦       IServiceRepository.cs
+¦       ¦       IStylistRepository.cs
+¦       ¦       
+¦       +---Migrations
+¦       ¦       20241123150940_Initial.cs
+¦       ¦       20241123150940_Initial.Designer.cs
+¦       ¦       AppDbContextModelSnapshot.cs
+¦       ¦       
+¦       +---Models
+¦       ¦   ¦   Roles.cs
+¦       ¦   ¦   
+¦       ¦   +---Enumerations
+¦       ¦           AppointmentStatus.cs
+¦       ¦           
+¦       +---Repositories
+¦               AppointmentRepository.cs
+¦               CustomerRepository.cs
+¦               RepositoryBase.cs
+¦               SalonRepository.cs
+¦               ServiceRepository.cs
+¦               StylistRepository.cs
+¦               
++---docker
+¦       Backend.Dockerfile
+¦       build.sh
+¦       Frontend.Dockerfile
+¦       
++---docs
+¦   ¦   API.md
+¦   ¦   SRS.md
+¦   ¦   
+¦   +---diagrams
+¦           Bi?u d? trình t? qu?n lý d?ch v?.svg
+¦           Bi?u d? trình t? qu?n lý l?ch h?n.svg
+¦           Bi?u d? trình t? dang ký.svg
+¦           Bi?u d? trình t? d?t l?ch h?n.svg
+¦           Bi?u d? tr?ng thái l?ch h?n.svg
+¦           Bi?u d? tác nhân.svg
+¦           Bi?u d? Use Case ch?c nang Customer.svg
+¦           Bi?u d? Use Case ch?c nang Guest.svg
+¦           Bi?u d? Use Case ch?c nang Manager.svg
+¦           Bi?u d? Use Case ch?c nang Stylist.svg
+¦           Bi?u d? Use Case t?ng quan.svg
+¦           DFD c?p 2 - H? th?ng d?t l?ch h?n.svg
+¦           Mô hình co s? d? li?u.svg
+¦           Mô hình ki?n trúc.svg
+¦           Quy trình qu?n lý l?ch h?n.svg
+¦           Quy trình d?t l?ch h?n.svg
+¦           
++---frontend
+    ¦   .dockerignore
+    ¦   .env.dev
+    ¦   .env.production
+    ¦   .gitignore
+    ¦   .prettierrc.yml
+    ¦   bun.lockb
+    ¦   entrypoint.sh
+    ¦   eslint.config.js
+    ¦   index.html
+    ¦   nginx.conf
+    ¦   package.json
+    ¦   README.md
+    ¦   tsconfig.app.json
+    ¦   tsconfig.json
+    ¦   tsconfig.node.json
+    ¦   vite.config.ts
+    ¦   
+    +---public
+    ¦       vite.svg
+    ¦       
+    +---src
+        ¦   App.tsx
+        ¦   index.css
+        ¦   main.tsx
+        ¦   ProtectedRoute.tsx
+        ¦   PublicRoute.tsx
+        ¦   vite-env.d.ts
+        ¦   
+        +---api
+        ¦       appointments.ts
+        ¦       auth.ts
+        ¦       customers.ts
+        ¦       index.ts
+        ¦       salon.ts
+        ¦       services.ts
+        ¦       stats.ts
+        ¦       stylists.ts
+        ¦       
+        +---assets
+        ¦       FacebookIcon.tsx
+        ¦       InstagramIcon.tsx
+        ¦       TwitterIcon.tsx
+        ¦       
+        +---components
+        ¦   ¦   Layout.tsx
+        ¦   ¦   
+        ¦   +---appointments
+        ¦   ¦       AppointmentHistory.tsx
+        ¦   ¦       CustomerProfile.tsx
+        ¦   ¦       UpcomingAppointments.tsx
+        ¦   ¦       
+        ¦   +---auth
+        ¦   ¦       AuthLayout.tsx
+        ¦   ¦       ChangePasswordForm.tsx
+        ¦   ¦       ForgotPasswordForm.tsx
+        ¦   ¦       LoginForm.tsx
+        ¦   ¦       RegisterForm.tsx
+        ¦   ¦       ResetPasswordForm.tsx
+        ¦   ¦       
+        ¦   +---booking
+        ¦   ¦       BookingConfirmation.tsx
+        ¦   ¦       DateSelection.tsx
+        ¦   ¦       ServiceSelection.tsx
+        ¦   ¦       StylistSelection.tsx
+        ¦   ¦       TimeSelection.tsx
+        ¦   ¦       
+        ¦   +---contact
+        ¦   ¦       ContactSection.tsx
+        ¦   ¦       
+        ¦   +---dashboard
+        ¦   ¦       AppointmentAcceptModal.tsx
+        ¦   ¦       AppointmentCancelModal.tsx
+        ¦   ¦       AppointmentDetailsModal.tsx
+        ¦   ¦       AppointmentList.tsx
+        ¦   ¦       CustomerManagement.tsx
+        ¦   ¦       DashboardHome.tsx
+        ¦   ¦       DashboardLayout.tsx
+        ¦   ¦       DashboardProfile.tsx
+        ¦   ¦       ManagerLayout.tsx
+        ¦   ¦       SalonSettings.tsx
+        ¦   ¦       ServiceManagement.tsx
+        ¦   ¦       StatCard.tsx
+        ¦   ¦       StylistManagement.tsx
+        ¦   ¦       
+        ¦   +---footer
+        ¦   ¦       Footer.tsx
+        ¦   ¦       SocialLinks.tsx
+        ¦   ¦       
+        ¦   +---header
+        ¦   ¦       Header.tsx
+        ¦   ¦       
+        ¦   +---hero
+        ¦   ¦       HeroSection.tsx
+        ¦   ¦       
+        ¦   +---services
+        ¦   ¦       FeaturedServices.tsx
+        ¦   ¦       SearchBar.tsx
+        ¦   ¦       ServiceCard.tsx
+        ¦   ¦       ServiceGrid.tsx
+        ¦   ¦       
+        ¦   +---stylists
+        ¦           FeaturedStylists.tsx
+        ¦           StylistCard.tsx
+        ¦           StylistGrid.tsx
+        ¦           
+        +---pages
+        ¦       About.tsx
+        ¦       Book.tsx
+        ¦       ChangePassword.tsx
+        ¦       Dashboard.tsx
+        ¦       EmailVerification.tsx
+        ¦       Forbidden.tsx
+        ¦       ForgotPassword.tsx
+        ¦       Home.tsx
+        ¦       index.ts
+        ¦       Login.tsx
+        ¦       Logout.tsx
+        ¦       MyAppointments.tsx
+        ¦       NotFound.tsx
+        ¦       Register.tsx
+        ¦       ResetPassword.tsx
+        ¦       Services.tsx
+        ¦       
+        +---types
+        ¦       appointments.ts
+        ¦       customers.ts
+        ¦       services.ts
+        ¦       stylists.ts
+        ¦       users.ts
+        ¦       
+        +---utils
+                formats.ts
+                
